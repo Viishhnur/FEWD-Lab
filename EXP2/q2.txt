@@ -1,0 +1,13 @@
+Problem-2
+Create a Portfolio page using HTML , it should contain 
+-> Self introduction
+-> skills 
+-> projects/work experiences (Git links)
+-> Feedback /achivements
+-> Education profile 
+-> Contact information.(Social media /phone /email)
+
+
+Note: once you create the poftfolio upload the page with neccesary document to Github account with public access
+
+and submit that github link here :
