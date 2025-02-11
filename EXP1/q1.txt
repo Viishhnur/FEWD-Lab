@@ -1,0 +1,11 @@
+Problem-1
+Create a Navigation bar using HTML 
+(With out CSS and Bootstarp), 
+it should contain 
+-> Home
+-> Signup
+-> Login
+-> Search Bar.
+
+Note: once you create web page upload the page to Github account 
+with public access
