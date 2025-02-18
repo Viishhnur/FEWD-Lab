@@ -1,0 +1,35 @@
+problem-1
+Create a Feedback form using HTML (With Internal CSS), it should contain 
+-> Name (optional)
+-> Email(Optional) 
+-> phone (optional)
+-> Rating 
+-> Any Questions regarding product or service.
+-> Additional comments (optional)
+-> Submit button
+
+Note: once you create web page upload the page to Github account with public access
+
+and submit that github link here : 
+
+Problem-2
+update a Portfolio page using internal CSS , it should contain 
+-> Self introduction
+-> skills 
+-> projects/work experiences (Git links)
+-> Feedback /achivements
+-> Education profile 
+-> Contact information.(Social media /phone /email)
+
+Note: add Internal CSS
+
+Note: once you update the poftfolio page upload the page with neccesary documents to Github account with public access
+
+and submit that github link here : 
+
+problem-3
+Update the both (feedback and portfolio) pages with external css.
+
+Note: once you update the poftfolio and Feedback pages  upload the page with neccesary document to Github account with public access
+
+and submit that github link here :
