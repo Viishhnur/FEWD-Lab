@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HastinKart - Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .logo {
+      animation: rotateLogo 8s linear infinite;
+    }
+    @keyframes rotateLogo {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Improved dark mode for core layout */
+    [data-bs-theme="dark"] body {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    [data-bs-theme="dark"] .navbar,
+    [data-bs-theme="dark"] .dropdown-menu,
+    [data-bs-theme="dark"] .card,
+    [data-bs-theme="dark"] .product-card,
+    [data-bs-theme="dark"] .footer,
+    [data-bs-theme="dark"] .modal-content,
+    [data-bs-theme="dark"] .form-control,
+    [data-bs-theme="dark"] .pagination,
+    [data-bs-theme="dark"] .page-link {
+      background-color: #1e1e1e !important;
+      color: #f1f1f1 !important;
+      border-color: #2c2c2c !important;
+    }
+
+    [data-bs-theme="dark"] a,
+    [data-bs-theme="dark"] a.nav-link,
+    [data-bs-theme="dark"] .navbar-nav .nav-link,
+    [data-bs-theme="dark"] .form-check-label,
+    [data-bs-theme="dark"] .btn,
+    [data-bs-theme="dark"] .card-title,
+    [data-bs-theme="dark"] .product-card-title,
+    [data-bs-theme="dark"] .product-card-price {
+      color: #f8f9fa !important;
+    }
+
+    [data-bs-theme="dark"] .btn-primary {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    [data-bs-theme="dark"] .btn-secondary {
+      background-color: #6c757d;
+      border-color: #6c757d;
+    }
+
+    [data-bs-theme="dark"] .btn-primary:hover,
+    [data-bs-theme="dark"] .btn-secondary:hover {
+      filter: brightness(110%);
+    }
+
+    [data-bs-theme="dark"] .form-check-input {
+      background-color: #333;
+      border-color: #777;
+    }
+
+    [data-bs-theme="dark"] .form-check-input:checked {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    [data-bs-theme="dark"] footer {
+      background-color: #111 !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="HastinKart Logo" width="80" height="80" style="border-radius: 50%;" class="d-inline-block align-top logo">
+        <span class="fw-bold">HastinKart</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="shop.html">Shop</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">
+              <i class="fas fa-shopping-cart"></i> Cart <span class="badge bg-primary cart-count">0</span>
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <button class="btn" id="theme-toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Listing Section -->
+  <section class="product-listing py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Sidebar Filters -->
+        <div class="col-md-3">
+          <div class="card mb-3 shadow-sm">
+            <div class="card-header">Filters</div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h5>Category</h5>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="electronics" id="categoryElectronics">
+                  <label class="form-check-label" for="categoryElectronics">Electronics</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="fashion" id="categoryFashion">
+                  <label class="form-check-label" for="categoryFashion">Fashion</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="home" id="categoryHome">
+                  <label class="form-check-label" for="categoryHome">Home & Living</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <h5>Price</h5>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="priceFilter" id="priceUnder50" value="under50">
+                  <label class="form-check-label" for="priceUnder50">Under $50</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="priceFilter" id="price50to100" value="50to100">
+                  <label class="form-check-label" for="price50to100">$50 - $100</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="priceFilter" id="priceOver100" value="over100">
+                  <label class="form-check-label" for="priceOver100">Over $100</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <h5>Rating</h5>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="ratingFilter" id="rating4" value="4">
+                  <label class="form-check-label" for="rating4">4 stars & up</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="ratingFilter" id="rating3" value="3">
+                  <label class="form-check-label" for="rating3">3 stars & up</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Grid -->
+        <div class="col-md-9">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Products</h2>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle shadow" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                Sort by
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+                <li><a class="dropdown-item" href="#" data-sort="price-asc">Price (Low to High)</a></li>
+                <li><a class="dropdown-item" href="#" data-sort="price-desc">Price (High to Low)</a></li>
+                <li><a class="dropdown-item" href="#" data-sort="popularity">Popularity</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row" id="productListContainer"></div>
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center" id="paginationContainer"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p>&copy; 2024 HastinKart. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopButton" class="btn btn-primary rounded-circle shadow" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const products = [
+        {
+          id: 1,
+          name: 'Apple AirPods Pro 2',
+          description: 'Wireless earbuds with active noise cancellation and high-fidelity sound.',
+          price: 249.99,
+          imageUrl: 'https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg'
+        },
+        {
+          id: 2,
+          name: 'UGG Classic Mini II Boot',
+          description: 'Iconic sheepskin boot offering comfort and warmth.',
+          price: 149.95,
+          imageUrl: 'https://th.bing.com/th/id/OIP.GkQAXWSwcKA9dq5FIsZMtAHaHa?w=89&h=89&c=1&rs=1&qlt=90&r=0&pid=InlineBlock'
+        },
+        {
+          id: 3,
+          name: 'Apple Watch Series 8',
+          description: 'Advanced smartwatch with health monitoring and fitness tracking features.',
+          price: 399.00,
+          imageUrl: 'https://th.bing.com/th/id/OIP.pMWZBr0ynCGU6Fz_7oVpEwHaEK?w=313&h=180&c=7&r=0&o=5&pid=1.7'
+        }
+      ];
+
+      const productListContainer = document.getElementById('productListContainer');
+      products.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'col-md-4 mb-4';
+        card.innerHTML = `
+          <div class="card product-card h-100">
+            <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}" style="height: 250px; object-fit: contain;">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title">${product.name}</h5>
+                <p class="card-text">${product.description}</p>
+              </div>
+              <div>
+                <p class="product-card-price fw-bold">$${product.price.toFixed(2)}</p>
+                <a href="product.html?id=${product.id}" class="btn btn-primary w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+        `;
+        productListContainer.appendChild(card);
+      });
+    });
+  </script>
+</body>
+</html>
