@@ -1,0 +1,66 @@
+/* style.css */
+
+body {
+    margin: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #FCF8E8;
+    line-height: 1.6;
+  }
+  .profile {
+    display: block;
+    margin: auto;
+    width: 120px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+  }
+  .profile-text {
+    text-align: center;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #94B49F;
+    color: white;
+  }
+  .proj {
+    width: 30%;
+    border: 2px solid #DF7861;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    background-color: #fff;
+  }
+  .clear {
+    clear: both;
+  }
+  #conform {
+    width: 300px;
+    margin-top: 30px;
+    border: 2px solid #DF7861;
+    padding: 15px;
+    background-color: #fff;
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  input[type="submit"] {
+    background-color: #94B49F;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  

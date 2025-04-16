@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jane Doe - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 30px;
+      font-family: Arial, sans-serif;
+      background-color: #FCF8E8;
+      line-height: 1.6;
+    }
+    .profile {
+      display: block;
+      margin: auto;
+      width: 120px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      border-radius: 8px;
+    }
+    .profile-text {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #94B49F;
+      color: white;
+    }
+    .proj {
+      width: 30%;
+      border: 2px solid #DF7861;
+      padding: 10px;
+      margin: 10px;
+      float: left;
+      background-color: #fff;
+    }
+    .clear { clear: both; }
+    #conform {
+      width: 300px;
+      margin-top: 30px;
+      border: 2px solid #DF7861;
+      padding: 15px;
+      background-color: #fff;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 6px;
+      margin: 6px 0;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #94B49F;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <img class="profile" src="profile.png" alt="Jane's Photo">
+  <h1 class="profile-text">Jane Doe</h1>
+  <p><b>Email:</b> janedoe@geemail.com</p>
+  <p><b>Mobile:</b> 000-000-0000</p>
+  <hr>
+
+  <h3>Career Objective</h3>
+  <p>Seeking a responsible career opportunity in the field of Computer Science where I can utilize my logical and technical skills towards personal and professional development.</p>
+
+  <h3>Academic Information</h3>
+  <table>
+    <tr>
+      <th>Course</th><th>Institution</th><th>Board</th><th>Year</th><th>CGPA</th>
+    </tr>
+    <tr>
+      <td>B.Tech (CSE)</td><td>KMIT</td><td>JNTUH</td><td>2021</td><td>7.32</td>
+    </tr>
+    <tr>
+      <td>Intermediate - MPC</td><td>Narayana Jr College</td><td>TSBIE</td><td>2017</td><td>93.9%</td>
+    </tr>
+    <tr>
+      <td>SSC</td><td>Vijaya Ratna School</td><td>SSC</td><td>2015</td><td>9.5</td>
+    </tr>
+  </table>
+
+  <h3>Technical Skills</h3>
+  <ul>
+    <li><b>Languages:</b> C, Java, Python</li>
+    <li><b>Database:</b> MySQL</li>
+    <li><b>Web:</b> HTML, CSS, Bootstrap, Node, ReactJS, PHP</li>
+  </ul>
+
+  <h3>Projects</h3>
+  <div class="proj">
+    <b>Project 1:</b><br>
+    <b>Stack:</b> MERN<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+  </div>
+  <div class="proj">
+    <b>Project 2:</b><br>
+    <b>Stack:</b> MEAN<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+  </div>
+  <div class="proj">
+    <b>Project 3:</b><br>
+    <b>Stack:</b> LAMP<br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+  </div>
+  <div class="clear"></div>
+
+  <h3>Achievements</h3>
+  <ul>
+    <li>Certified in Neural Networks - Coursera</li>
+    <li>Certified in Ethical Hacking - NPTEL</li>
+    <li>Scratch Programming - KMIT</li>
+    <li>Participated in Street Cause</li>
+  </ul>
+
+  <h3>Strengths</h3>
+  <ul>
+    <li>Positive Attitude</li>
+    <li>Self-Motivated and Dedicated</li>
+  </ul>
+
+  <h3>Personal Profile</h3>
+  <table>
+    <tr><td><b>Location</b></td><td>Hyderabad</td></tr>
+    <tr><td><b>DOB</b></td><td>00-00-2000</td></tr>
+    <tr><td><b>Languages</b></td><td>English, Telugu, Hindi</td></tr>
+  </table>
+
+  <h3>Contact Me</h3>
+  <div id="conform">
+    <form action="mailto:janedoe@geemail.com" method="POST" enctype="text/plain">
+      <label><b>Name:</b></label>
+      <input type="text" name="ContactName" required>
+
+      <label><b>Message:</b></label>
+      <textarea name="ContactComment" rows="5" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
